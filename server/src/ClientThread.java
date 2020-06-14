@@ -110,9 +110,7 @@ public class ClientThread implements Runnable {
                 serverOutputStream.writeObject(controller.getStudentList().get(i));
                 Main.date = new Date();
                 Main.logText.setText(Main.logText.getText() + Main.date + ": sent student " + controller.getStudentList().get(i) + "\n");
-                // Список студентов отправляется по одному
-                // При отправке самого списка полностью возникли проблемы
-                // Из-за этого было выбрано такое решение
+         
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -252,9 +250,7 @@ public class ClientThread implements Runnable {
                 serverOutputStream.writeObject(resultList.get(i));
                 Main.date= new Date();
                 Main.logText.setText(Main.logText.getText()+Main.date+": sent student "+resultList.get(i)+"\n");
-                // Список студентов отправляется по одному
-                // При отправке самого списка полностью возникли проблемы
-                // Из-за этого было выбрано такое решение
+            
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -285,9 +281,7 @@ public class ClientThread implements Runnable {
                 serverOutputStream.writeObject(controller.getStudentList().get(i));
                 Main.date= new Date();
                 Main.logText.setText(Main.logText.getText()+Main.date+": sent student\n");
-                // Список студентов отправляется по одному
-                // При отправке самого списка полностью возникли проблемы
-                // Из-за этого было выбрано такое решение
+            
             }
         } catch (Exception e) {
             e.printStackTrace();
